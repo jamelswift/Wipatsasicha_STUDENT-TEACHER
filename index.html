@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Teacher Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+        <div class="student-card">
+            <!-- Header -->
+            <div class="header">
+                <div class="logo">
+                    <img src="public/kmitl.png" alt="KMITL Logo" class="w-12 h-12">
+                </div>
+                <h1 class="university-name">
+                    King Mongkut's Institute of Technology Ladkrabang
+                </h1>
+            </div>
+
+            <!-- Curved decoration -->
+            <div class="curve-container">
+                <svg viewBox="0 0 600 60" preserveAspectRatio="none" class="curve-svg">
+                    <path 
+                        d="M0,0 L600,0 L600,20 Q300,80 0,20 Z" 
+                        fill="#2c5d8f"
+                    />
+                    <path 
+                        d="M0,15 Q300,70 600,15 L600,25 Q300,85 0,25 Z" 
+                        fill="#a8c4d9"
+                    />
+                </svg>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <div class="photo-section">
+                    <div class="photo-frame">
+                        <img 
+                            src="public/Wipatsasicha.png"
+                            alt="Student Photo"
+                            class="student-photo"
+                        />
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2 class="title">STUDENT TEACHER</h2>
+                    
+                    <div class="info-grid">
+                        <div class="info-row">
+                            <span class="label">Name</span>
+                            <span class="colon">:</span>
+                            <span class="value">Wipatsasicha Bumpenboon</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">ID Number</span>
+                            <span class="colon">:</span>
+                            <span class="value">66030281</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">Birth of Date</span>
+                            <span class="colon">:</span>
+                            <span class="value">7 Feb 2005</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">Phone</span>
+                            <span class="colon">:</span>
+                            <span class="value">065-680-5890</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">Address</span>
+                            <span class="colon">:</span>
+                            <span class="value">Ladkrabang</span>
+                        </div>
+                    </div>
+
+                    <div class="barcode-container">
+                        <canvas id="barcodeCanvas" width="250" height="50" class="barcode"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"><\/script>
+</body>
+</html>
